@@ -7,19 +7,30 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <header></header>
-
+    <!-- ABOUT ME -->
     <h1>Welcome !</h1>
-    <h2>About me</h2>
-    <p>
-      Hello! My name's Raphaël Delcros! I'm a big fan of video-games and TTRPGs (and between us,
-      obsessed with dragons). I've started studying Computer Science since 2024 and was fascinated
-      by it even before then. This website will contain a few projects I did at uni and later on
-      will have more personnal projects. You can consider this website as one!
-    </p>
+    <div id="aboutme">
+      <h2>About me</h2>
+      <p>
+        Hello! My name's Raphaël Delcros! I'm a big fan of video-games and TTRPGs (and between us,
+        obsessed with dragons). I've started studying Computer Science since 2024 and was fascinated
+        by it even before then. This website will contain a few projects I did at uni and later on
+        will have more personal projects. You can consider this website as one!
+      </p>
+      <img src="images/photo.png" alt="A photo of Raphaël Delcros." />
+      <a href="images/raphael_delcros_CV.pdf" target="_blank">Check out my CV</a>
+      <a href="https://github.com/Raphael-Delcros"
+        ><img id="github" src="images/socialMedias/github-142-svgrepo-com.svg" alt="Github logo"
+      /></a>
+      <a href="https://www.linkedin.com/in/raphael-delcros/"
+        ><img id="linkedin" src="images/socialMedias/linkedin-svgrepo-com.svg" alt="Linkedin Logo"
+      /></a>
+    </div>
 
+    <!-- PROJECTS -->
     <h2>Projects</h2>
     <div id="Passatemps">
+      <h3>Passatemps</h3>
       <p>
         Passatemps is a three year long project about a second-hand board game reselling website,
         kind of like Vinted or France's Leboncoin. As it is a long project, it was done in a group.
@@ -27,11 +38,99 @@
         this includes making a graphic chart, mock-ups and wireframes, as well as a 120 pages long
         document describing in minute details the project.
       </p>
+      <p><b>Tags:</b> UML, HTML, CSS, Web Design, Project management</p>
       <img
-        src="images/passatemps.png"
-        id="img_passatemps"
+        src="images/projects/passatemps.png"
+        id="imgPassatemps"
         alt="The mock-up of Passatemps' homepage."
       />
     </div>
+    <div id="portfolio">
+      <h3>Portfolio</h3>
+      <p>
+        Like I said, you can consider this website as one of my projects. I'll expend on it as more
+        projects get done, and I also want to add a language switch to toggle between French and
+        English.
+      </p>
+      <p><b>Tags:</b> Personal, HTML, CSS</p>
+    </div>
+    <div id="cdPlayer">
+      <h3>CD player</h3>
+      <p>
+        As part of our university courses, we've had to learn Qt and work on a specific application.
+        For our year's, it was a reproduction of a physical CD player. The user had to manually open
+        and close the disk cover, and all analog buttons were reproduced on the app. It was also a
+        functionnal music player.
+      </p>
+      <p><b>Tags:</b> C++, Qt, MVP structure</p>
+      <img
+        src="images/projects/cdPlayer.png"
+        id="imageCdPlayer"
+        alt="A screenshot of a CD player made on Qt."
+      />
+    </div>
+    <div id="spaceInvaders">
+      <h3>Space Invaders</h3>
+      <p>
+        A failed project, but a project nonetheless. Our goal was to import a map of Bayonne and,
+        with Djikstra, BFK or A* (shortest path algorithms), find the shortest path between a dozen
+        landmarks about space invaders graffitis.
+      </p>
+      <p><b>Tags:</b> Python, Sorting algorithms</p>
+      <img
+        src="images/projects/spaceInvaders.png"
+        id="imageSpaceInvaders"
+        alt="A screenshot of a map of Bayonne with dots spread inside it. A red line goes through a few roads, but ultimately breaks."
+      />
+    </div>
+    <!-- SKILLS -->
+    <h2>Skills</h2>
+    <h3>Hard Skills</h3>
+    <p>Competent in:</p>
+    <ul class="skills">
+      <li>C++</li>
+      <li>Python</li>
+      <li>SQL</li>
+    </ul>
+    <p>Notions of:</p>
+    <ul class="skills">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript (JS)</li>
+      <li>PHP</li>
+    </ul>
+    <h3>Soft Skills</h3>
+    <ul class="skills">
+      <li>Critical Thinking</li>
+      <li>Adaptability</li>
+      <li>Problem Solving</li>
+    </ul>
+    <h3>Languages</h3>
+    <p>Native in French</p>
+    <p>Comfortable in English</p>
+    <!-- EXPERIENCES -->
+    <h2>Experiences</h2>
+
+    <h3>2022 - Regard Félin la boutique</h3>
+    <p>
+      Regard Félin la boutique is an online shop selling cat products. There, I had the delight to
+      learn all about e-commerce and how one was made. I delved into the specifics such as how to
+      take good photos of products or how to make nice packages for parcels and, of course, met a
+      lot of cats.
+    </p>
+
+    <h3>2020 - SELLSY</h3>
+    <p>
+      SELLSY is a Customer Relationship Management web application. I got to learn many things about
+      User Experience (UX) and User Interface (UI). Additionally, I had the opportunity to see the
+      development side of the website, as well as Customer Assistance.
+    </p>
+
+    <h2>Other</h2>
+    <p>
+      I have participated in the "Nuit du code", a challenge where Computer Science students spent a
+      whole night to create a website based on a theme. So far, I have only done the 2024 edition,
+      but plan to do it again this year in 2025.
+    </p>
   </body>
 </html>
