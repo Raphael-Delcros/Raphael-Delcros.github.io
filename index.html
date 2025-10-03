@@ -1,34 +1,66 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raphaël Delcros</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="style/style.css" />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </head>
-  <body>
+  <body class="container">
     <!-- ABOUT ME -->
-    <h1>Welcome !</h1>
+    <h1 class="display1">Welcome !</h1>
     <div id="aboutme">
-      <h2>About me</h2>
+      <h2 class="mt-4">About me</h2>
+      <img
+        class="img-fluid float-end rounded-circle ms-3 mb-2"
+        src="images/TN_Delcros_Raphael_trim.jpg"
+        alt="A photo of Raphaël Delcros."
+        id="pfp"
+      />
       <p>
         Hello! My name's Raphaël Delcros! I'm a big fan of video-games and TTRPGs (and between us,
         obsessed with dragons). I've started studying Computer Science since 2024 and was fascinated
         by it even before then. This website will contain a few projects I did at uni and later on
         will have more personal projects. You can consider this website as one!
       </p>
-      <img src="images/photo.png" alt="A photo of Raphaël Delcros." />
-      <a href="images/raphael_delcros_CV.pdf" target="_blank">Check out my CV</a>
-      <a href="https://github.com/Raphael-Delcros"
-        ><img id="github" src="images/socialMedias/github-142-svgrepo-com.svg" alt="Github logo"
-      /></a>
-      <a href="https://www.linkedin.com/in/raphael-delcros/"
-        ><img id="linkedin" src="images/socialMedias/linkedin-svgrepo-com.svg" alt="Linkedin Logo"
-      /></a>
+    </div>
+
+    <div class="row row-cols-auto">
+      <div class="col">
+        <a
+          type="button"
+          class="btn btn-primary text-nowrap col"
+          href="images/raphael_delcros_CV.pdf"
+          target="_blank"
+        >
+          Check out my CV
+        </a>
+      </div>
+      <div class="col-md-auto">
+        <a href="https://github.com/Raphael-Delcros"
+          ><img
+            class="img-fluid logo"
+            src="images/socialMedias/github-142-svgrepo-com.svg"
+            alt="Github logo"
+        /></a>
+      </div>
+      <div class="col-md-auto">
+        <a href="https://www.linkedin.com/in/raphael-delcros/" class="col-1"
+          ><img
+            class="img-fluid logo"
+            src="images/socialMedias/linkedin-svgrepo-com.svg"
+            alt="Linkedin
+        Logo"
+        /></a>
+      </div>
+
+      <p></p>
     </div>
 
     <!-- PROJECTS -->
-    <h2>Projects</h2>
+    <h2 class="mt-4">Projects</h2>
     <div id="Passatemps">
       <h3>Passatemps</h3>
       <p>
@@ -43,10 +75,11 @@
         src="images/projects/passatemps.png"
         id="imgPassatemps"
         alt="The mock-up of Passatemps' homepage."
+        class="img-fluid exemple"
       />
     </div>
     <div id="portfolio">
-      <h3>Portfolio</h3>
+      <h3 class="mt-4">Portfolio</h3>
       <p>
         Like I said, you can consider this website as one of my projects. I'll expend on it as more
         projects get done, and I also want to add a language switch to toggle between French and
@@ -55,7 +88,7 @@
       <p><b>Tags:</b> Personal, HTML, CSS</p>
     </div>
     <div id="cdPlayer">
-      <h3>CD player</h3>
+      <h3 class="mt-4">CD player</h3>
       <p>
         As part of our university courses, we've had to learn Qt and work on a specific application.
         For our year's, it was a reproduction of a physical CD player. The user had to manually open
@@ -67,10 +100,11 @@
         src="images/projects/cdPlayer.png"
         id="imageCdPlayer"
         alt="A screenshot of a CD player made on Qt."
+        class="img-fluid exemple"
       />
     </div>
     <div id="spaceInvaders">
-      <h3>Space Invaders</h3>
+      <h3 class="mt-4">Space Invaders</h3>
       <p>
         A failed project, but a project nonetheless. Our goal was to import a map of Bayonne and,
         with Djikstra, BFK or A* (shortest path algorithms), find the shortest path between a dozen
@@ -79,37 +113,57 @@
       <p><b>Tags:</b> Python, Sorting algorithms</p>
       <img
         src="images/projects/spaceInvaders.png"
-        id="imageSpaceInvaders"
         alt="A screenshot of a map of Bayonne with dots spread inside it. A red line goes through a few roads, but ultimately breaks."
+        class="img-fluid exemple"
       />
     </div>
     <!-- SKILLS -->
-    <h2>Skills</h2>
-    <h3>Hard Skills</h3>
-    <p>Competent in:</p>
-    <ul class="skills">
-      <li>C++</li>
-      <li>Python</li>
-      <li>SQL</li>
-    </ul>
-    <p>Notions of:</p>
-    <ul class="skills">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript (JS)</li>
-      <li>PHP</li>
-    </ul>
-    <h3>Soft Skills</h3>
-    <ul class="skills">
-      <li>Critical Thinking</li>
-      <li>Adaptability</li>
-      <li>Problem Solving</li>
-    </ul>
-    <h3>Languages</h3>
-    <p>Native in French</p>
-    <p>Comfortable in English</p>
+    <h2 class="mt-4">Skills</h2>
+
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Hard Skills</h3>
+
+        <div class="row">
+          <div class="col-6">
+            <p>Competent in:</p>
+            <ul class="skills">
+              <li>C++</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Git</li>
+            </ul>
+          </div>
+
+          <div class="col-6">
+            <p>Notions of:</p>
+            <ul class="skills">
+              <li>HTML/CSS/JavaScript (JS)</li>
+              <li>PL/SQL</li>
+              <li>Figma</li>
+              <li>PHP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <h3>Soft Skills</h3>
+        <ul class="skills">
+          <li>Critical Thinking</li>
+          <li>Adaptability</li>
+          <li>Problem Solving</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h3>Languages</h3>
+        <p>Native in French</p>
+        <p>Comfortable in English</p>
+      </div>
+    </div>
     <!-- EXPERIENCES -->
-    <h2>Experiences</h2>
+    <h2 class="mt-4">Experiences</h2>
 
     <h3>2022 - Regard Félin la boutique</h3>
     <p>
@@ -126,7 +180,7 @@
       development side of the website, as well as Customer Assistance.
     </p>
 
-    <h2>Other</h2>
+    <h2 class="mt-4">Other</h2>
     <p>
       I have participated in the "Nuit du code", a challenge where Computer Science students spent a
       whole night to create a website based on a theme. So far, I have only done the 2024 edition,

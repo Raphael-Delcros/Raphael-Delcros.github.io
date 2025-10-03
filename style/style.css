@@ -1,9 +1,18 @@
-#linkedin,
-#github {
-  height: 50px;
-  width: 50px;
+.logo {
+  height: 2rem;
+  width: auto;
+}
+
+#pfp {
+  height: 20%;
+  width: 20%;
 }
 
 h2 {
-  color: #542559;
+  color: #d18dd9;
+}
+
+.exemple {
+  width: 70%;
+  height: auto;
 }
