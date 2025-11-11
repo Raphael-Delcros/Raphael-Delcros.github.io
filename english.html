@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" data-bs-theme="dark">
+<html lang="fr" data-bs-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,8 +17,9 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
-    <header class="sticky-top">
+    <header class="sticky-top shadow-sm">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Raphaël Delcros</a>
@@ -99,62 +100,163 @@
       </div>
 
       <!-- PROJECTS -->
+      <!-- PROJECTS -->
       <h2 class="mt-4" id="projects">Projects</h2>
-      <div id="Passatemps">
-        <h3>Passatemps</h3>
-        <p>
-          Passatemps is a three year long project about a second-hand board game reselling website,
-          kind of like Vinted or France's Leboncoin. As it is a long project, it was done in a
-          group. I am considered the P.O. of the project. We've had to do the whole concept from
-          scratch, this includes making a graphic chart, mock-ups and wireframes, as well as a 120
-          pages long document describing in minute details the project.
-        </p>
-        <p><b>Tags:</b> UML, HTML, CSS, Web Design, Project management</p>
-        <img
-          src="images/projects/passatemps.png"
-          id="imgPassatemps"
-          alt="The mock-up of Passatemps' homepage."
-          class="img-fluid exemple"
-        />
+      <div id="carouselExample" class="carousel carousel-dark slide pt-4">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/projects/passatemps.png"
+                      class="img-fluid rounded-start"
+                      alt="Image of the Passatemps project"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Passatemps</h5>
+                      <p class="card-text">
+                        <b>Passatemps</b> is a three year long project about a second-hand board
+                        game reselling website, kind of like Vinted or France's Leboncoin. As it is
+                        a long project, it was done in a group. I am considered the P.O. of the
+                        project. We've had to do the whole concept from scratch, this includes
+                        making a graphic chart, mock-ups and wireframes, as well as a 120 pages long
+                        document describing in minute details the project.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-body-secondary">
+                          <b>Tags :</b> UML, HTML, CSS, Web Design, Project Management, MVC, php,
+                          MySQL
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/projects/portfolio.png"
+                      class="img-fluid rounded-start"
+                      alt="Image du site"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Portfolio</h5>
+                      <p class="card-text">
+                        Like I said, you can consider this website as one of my projects (even if it
+                        was an assignment given in the university). I'll expend on it as more
+                        projects get done. If Github would allow it, this website would have been
+                        done with php and twig.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-body-secondary">
+                          <b>Tags :</b> Personal, HTML, CSS
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/projects/cdPlayer.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Lecteur CD</h5>
+                      <p class="card-text">
+                        To learn Qt (a multi-platform application development framework), we had to
+                        create a specific application depending on the year. For ours, it was a
+                        reproduction of a physical CD player. The user had to manually open and
+                        close the disk cover, insert or remove the disk, navigate between different
+                        songs, etc. Each analog button was replaced by its equivalent in the
+                        software.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-body-secondary">
+                          <b>Tags :</b> C++, Qt, MVP Structure
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/projects/spaceInvaders.png"
+                      class="img-fluid rounded-start"
+                      alt="Image du projet Space Invaders"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Space Invaders</h5>
+                      <p class="card-text">
+                        Our goal was to import a map of the city of Bayonne to trace the shortest
+                        path between certain public artworks. We therefore used the Dijkstra, BFK 16
+                        and A* algorithms to achieve this. Unfortunately, we were unable to complete
+                        this project due to lack of time.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-body-secondary">
+                          <b>Tags :</b> Python, Sorting algorithms
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+          style="filter: invert(100%)"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+          style="filter: invert(100%)"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div id="portfolio">
-        <h3 class="mt-4">Portfolio</h3>
-        <p>
-          Like I said, you can consider this website as one of my projects (even if it was an
-          assignment given in the university). I'll expend on it as more projects get done.
-        </p>
-        <p><b>Tags:</b> Personal, HTML, CSS</p>
-      </div>
-      <div id="cdPlayer">
-        <h3 class="mt-4">CD player</h3>
-        <p>
-          As part of our university courses, we've had to learn Qt and work on a specific
-          application. For our year's, it was a reproduction of a physical CD player. The user had
-          to manually open and close the disk cover, and all analog buttons were reproduced on the
-          app. It was also a functionnal music player.
-        </p>
-        <p><b>Tags:</b> C++, Qt, MVP structure</p>
-        <img
-          src="images/projects/cdPlayer.png"
-          id="imageCdPlayer"
-          alt="A screenshot of a CD player made on Qt."
-          class="img-fluid exemple"
-        />
-      </div>
-      <div id="spaceInvaders">
-        <h3 class="mt-4">Space Invaders</h3>
-        <p>
-          A failed project, but a project nonetheless. Our goal was to import a map of Bayonne and,
-          with Djikstra, BFK or A* (shortest path algorithms), find the shortest path between a
-          dozen landmarks about space invaders graffitis.
-        </p>
-        <p><b>Tags:</b> Python, Sorting algorithms</p>
-        <img
-          src="images/projects/spaceInvaders.png"
-          alt="A screenshot of a map of Bayonne with dots spread inside it. A red line goes through a few roads, but ultimately breaks."
-          class="img-fluid exemple"
-        />
-      </div>
+
       <!-- SKILLS -->
       <h2 class="mt-4" id="skills">Skills</h2>
 
