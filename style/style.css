@@ -9,11 +9,15 @@
 }
 
 h2 {
-  color: #d18dd9;
+  color: #c34fd0;
 }
 
 .exemple {
   width: 70%;
   height: auto;
   border-radius: 1%;
+}
+
+.card-wrapper {
+  display: flex;
 }

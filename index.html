@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" data-bs-theme="dark">
+<html lang="fr" data-bs-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,8 +17,9 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
-    <header class="sticky-top">
+    <header class="sticky-top shadow-sm">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Raphaël Delcros</a>
@@ -35,9 +36,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#projects">Projects</a>
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" aria-current="page" href="#">Accueil</a>
+              <a class="nav-link" href="#projects">Projets</a>
+              <a class="nav-link" href="#skills">Compétences</a>
               <a class="nav-link" href="#experiences">Experiences</a>
             </div>
           </div>
@@ -47,22 +48,27 @@
 
     <!-- ABOUT ME -->
     <main class="container mt-4">
-      <h1 class="display1">Welcome !</h1>
-      <a href="french.html">Version française</a>
+      <h1 class="display1">Bienvenue !</h1>
+      <a href="english.html">English version</a>
       <div id="aboutme">
-        <h2 class="mt-4">About me</h2>
+        <h2 class="mt-4">À propos de moi</h2>
         <img
           class="img-fluid float-end rounded-circle ms-3 mb-2"
           src="images/TN_Delcros_Raphael_trim.jpg"
           alt="A photo of Raphaël Delcros."
           id="pfp"
         />
+        <p>Bonjour ! Je m'appelle Raphaël Delcros.</p>
         <p>
-          Hello! My name is Raphaël Delcros! I've started studying Computer Science since 2024 and
-          was fascinated by it even before then. This website will contain a few projects I did in
-          uni the University Institute of Technology of Bayonne and Pays-Basques, later on will have
-          more personal projects. You can consider this website as one! Also, I'm a big fan of
-          video-games and TTRPGs.
+          Je suis étudiant en informatique depuis l'année 2024 à l'IUT de Bayonne et du Pays Basque,
+          mais j'ai cette passion depuis mon enfance et ai toujours orienté mes études secondaires
+          dans cette voie. Ce site est, à l'origine réalisé en anglais, à la demande de l'IUT, mais
+          je compte y ajouter également mes projets personnels au fur et à mesure de leur
+          finalisation.
+        </p>
+        <p>
+          Je suis un grand fan de jeux-vidéo, VR et de jeux de rôles sur table (via internet) avec
+          des joueurs basés dans le monde entier.
         </p>
       </div>
 
@@ -71,10 +77,10 @@
           <a
             type="button"
             class="btn btn-primary text-nowrap col"
-            href="images/raphael_delcros_CV_EN.pdf"
+            href="images/raphael_delcros_CV_FR.pdf"
             target="_blank"
           >
-            Check out my CV
+            Regardez mon CV
           </a>
         </div>
         <div class="col-md-auto">
@@ -82,7 +88,7 @@
             ><img
               class="img-fluid logo"
               src="images/socialMedias/github-142-svgrepo-com.svg"
-              alt="Github logo"
+              alt="Logo de GitHub"
           /></a>
         </div>
         <div class="col-md-auto">
@@ -90,8 +96,7 @@
             ><img
               class="img-fluid logo"
               src="images/socialMedias/linkedin-svgrepo-com.svg"
-              alt="Linkedin
-        Logo"
+              alt="Logo de LinkedIn"
           /></a>
         </div>
 
@@ -99,64 +104,219 @@
       </div>
 
       <!-- PROJECTS -->
-      <h2 class="mt-4" id="projects">Projects</h2>
+      <h2 class="mt-4" id="projects">Projets</h2>
+      <div class="carousel carousel-dark slide pt-4">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/projects/passatemps.png"
+                      class="img-fluid rounded-start"
+                      alt="Image du projet Passatemps"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Passatemps</h5>
+                      <p class="card-text">
+                        <b>Passatemps</b> est un projet de groupe de conception et création d'une
+                        application web de vente d'occasion de jeux de société, à l'instar de Vinted
+                        ou Leboncoin. Le projet est étalé sur trois années et j'en suis le Product
+                        Owner. Cette application a été créée de A à Z (maquettes fils-de-fer,
+                        mock-ups, scénarios, etc.), ainsi que le document de travail associé de 120
+                        pages décrivant chaque détail.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-body-secondary">
+                          <b>Tags :</b> UML, HTML, CSS, Design Web, Gestion de projet, MVC
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="" class="img-fluid rounded-start" alt="Image du site" />
+                    <!-- TODO ^^ ^^ -->
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Portfolio</h5>
+                      <p class="card-text">
+                        Ce site est un de mes projets (même s'il à été demandé par l'IUT). Je
+                        l'enrichirai avec plus de projets quand ils seront réalisés.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-body-secondary">
+                          <b>Tags :</b> Personnel, HTML, CSS
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/projects/cdPlayer.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Lecteur CD</h5>
+                      <p class="card-text">
+                        Pour l'apprentissage de Qt (framework de développement d'applications
+                        multiplateformes), nous devions créer une application spécifique en fonction
+                        de l'année. Pour la nôtre, c'était la reproduction d'un lecteur CD physique.
+                        L'utilisateur devait pouvoir manuellement ouvrir et fermer le lecteur,
+                        insérer ou retirer le disque, se déplacer entre les différentes musiques,
+                        etc. Chaque bouton analogue était remplacé par son équivalent dans le
+                        logiciel.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-body-secondary">
+                          <b>Tags :</b> C++, Qt, Structure MVP
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="images/projects/spaceInvaders.png"
+                      class="img-fluid rounded-start"
+                      alt="Image du projet Space Invaders"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Space Invaders</h5>
+                      <p class="card-text">
+                        Notre but était d'importer une carte de la ville de Bayonne pour tracer le
+                        chemin le plus court entre certaines œuvres d'art publiques. Nous avons donc
+                        utilisé les algorithmes de Dijkstra, BFK 16 et A* pour y parvenir.
+                        Malheureusement, nous n'avons pas pu concrétiser ce projet par manque de
+                        temps.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-body-secondary">
+                          <b>Tags :</b> C++, Qt, Structure MVP
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+          style="filter: invert(100%)"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+          style="filter: invert(100%)"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- <h2 class="mt-4" id="projects">Projets</h2>
       <div id="Passatemps">
         <h3>Passatemps</h3>
         <p>
-          Passatemps is a three year long project about a second-hand board game reselling website,
-          kind of like Vinted or France's Leboncoin. As it is a long project, it was done in a
-          group. I am considered the P.O. of the project. We've had to do the whole concept from
-          scratch, this includes making a graphic chart, mock-ups and wireframes, as well as a 120
-          pages long document describing in minute details the project.
+          <b>Passatemps</b> est un projet de groupe de conception et création d'une application web
+          de vente d'occasion de jeux de société, à l'instar de Vinted ou Leboncoin. Le projet est
+          étalé sur trois années et j'en suis le Product Owner. Cette application a été créée de A à
+          Z (maquettes fils-de-fer, mock-ups, scénarios, etc.), ainsi que le document de travail
+          associé de 120 pages décrivant chaque détail.
         </p>
-        <p><b>Tags:</b> UML, HTML, CSS, Web Design, Project management</p>
+        <p><b>Tags :</b> UML, HTML, CSS, Design Web, Gestion de projet</p>
         <img
           src="images/projects/passatemps.png"
           id="imgPassatemps"
-          alt="The mock-up of Passatemps' homepage."
+          alt="Le mock-up de la page d'accueil de Passatemps"
           class="img-fluid exemple"
         />
       </div>
       <div id="portfolio">
         <h3 class="mt-4">Portfolio</h3>
         <p>
-          Like I said, you can consider this website as one of my projects (even if it was an
-          assignment given in the university). I'll expend on it as more projects get done.
+          Ce site est un de mes projets (même s'il à été demandé par l'IUT). Je l'enrichirai avec
+          plus de projets quand ils seront réalisés.
         </p>
-        <p><b>Tags:</b> Personal, HTML, CSS</p>
+        <p><b>Tags :</b> Personnel, HTML, CSS</p>
       </div>
       <div id="cdPlayer">
-        <h3 class="mt-4">CD player</h3>
+        <h3 class="mt-4">Lecteur CD</h3>
         <p>
-          As part of our university courses, we've had to learn Qt and work on a specific
-          application. For our year's, it was a reproduction of a physical CD player. The user had
-          to manually open and close the disk cover, and all analog buttons were reproduced on the
-          app. It was also a functionnal music player.
+          Pour l'apprentissage de Qt (framework de développement d'applications multiplateformes),
+          nous devions créer une application spécifique en fonction de l'année. Pour la nôtre,
+          c'était la reproduction d'un lecteur CD physique. L'utilisateur devait pouvoir
+          manuellement ouvrir et fermer le lecteur, insérer ou retirer le disque, se déplacer entre
+          les différentes musiques, etc. Chaque bouton analogue était remplacé par son équivalent
+          dans le logiciel.
         </p>
-        <p><b>Tags:</b> C++, Qt, MVP structure</p>
+        <p><b>Tags :</b> C++, Qt, Structure MVP</p>
         <img
           src="images/projects/cdPlayer.png"
           id="imageCdPlayer"
-          alt="A screenshot of a CD player made on Qt."
+          alt="Une capture d'écran d'un lecteur CD fait sur Qt."
           class="img-fluid exemple"
         />
       </div>
       <div id="spaceInvaders">
         <h3 class="mt-4">Space Invaders</h3>
         <p>
-          A failed project, but a project nonetheless. Our goal was to import a map of Bayonne and,
-          with Djikstra, BFK or A* (shortest path algorithms), find the shortest path between a
-          dozen landmarks about space invaders graffitis.
+          Notre but était d'importer une carte de la ville de Bayonne pour tracer le chemin le plus
+          court entre certaines œuvres d'art publiques. Nous avons donc utilisé les algorithmes de
+          Dijkstra, BFK 16 et A* pour y parvenir. Malheureusement, nous n'avons pas pu concrétiser
+          ce projet par manque de temps.
         </p>
-        <p><b>Tags:</b> Python, Sorting algorithms</p>
+        <p><b>Tags :</b> Python, algorithme de tri, Dijkstra, BFK 16, A*</p>
         <img
           src="images/projects/spaceInvaders.png"
-          alt="A screenshot of a map of Bayonne with dots spread inside it. A red line goes through a few roads, but ultimately breaks."
+          alt="Une capture d'écran de la carte de Bayonne. Une ligne rouge passe entre quelques rues mais le programme malfonctionne."
           class="img-fluid exemple"
         />
-      </div>
+      </div> -->
       <!-- SKILLS -->
-      <h2 class="mt-4" id="skills">Skills</h2>
+      <h2 class="mt-4" id="skills">Compétences</h2>
 
       <div class="row">
         <div class="col-md-4">
@@ -164,7 +324,7 @@
 
           <div class="row">
             <div class="col-6">
-              <p>Competent in:</p>
+              <p>Compétent en:</p>
               <ul class="skills">
                 <li>C++</li>
                 <li>Python</li>
@@ -174,7 +334,7 @@
             </div>
 
             <div class="col-6">
-              <p>Notions of:</p>
+              <p>Bonnes notions en:</p>
               <ul class="skills">
                 <li>HTML/CSS/JavaScript (JS)</li>
                 <li>PL/SQL</li>
@@ -188,41 +348,42 @@
         <div class="col-md-4">
           <h3>Soft Skills</h3>
           <ul class="skills">
-            <li>Critical Thinking</li>
-            <li>Adaptability</li>
-            <li>Problem Solving</li>
+            <li>Esprit Critique</li>
+            <li>Adaptabilité</li>
+            <li>Résolution de problèmes</li>
           </ul>
         </div>
 
         <div class="col-md-4">
-          <h3>Languages</h3>
-          <p>Native in French</p>
-          <p>Comfortable in English</p>
+          <h3>Langues</h3>
+          <p>Français natif</p>
+          <p>Anglophone</p>
         </div>
       </div>
       <!-- EXPERIENCES -->
-      <h2 class="mt-4" id="experiences">Experiences</h2>
+      <h2 class="mt-4" id="experiences">Expériences</h2>
 
       <h3>2021 - Regard Félin la boutique</h3>
       <p>
-        Regard Félin la boutique is an online shop selling cat products. There, I had the delight to
-        learn all about e-commerce and how one was made. I delved into the specifics such as how to
-        create multimedia content showcasing products or how to make nice packages for parcels, and,
-        of course, met a lot of cats.
+        <b>Regard Félin la boutique</b> est un site de e-commerce vendant des produits pour chats.
+        j'ai pu découvrir la création et la gestion d'un site en no-code. J'ai aussi appris comment
+        créer et optimiser du contenu multimédia pour présenter des produits.
       </p>
+      <p>"En bonus, j'ai dit coucou à beaucoup de chats ! "</p>
 
       <h3>2020 - SELLSY</h3>
       <p>
-        SELLSY is a Customer Relationship Management web application. I got to learn many things
-        about User Experience (UX) and User Interface (UI). Additionally, I had the opportunity to
-        see the development side of the website, as well as Customer Assistance.
+        <b>SELLSY</b> est une startup qui, lors de mon stage, développait une application web de CRM
+        (Customer Relationship Management). J'ai beaucoup appris sur l'expérience utilisateur, comme
+        l'User Interface et l'User Experience. J'ai aussi eu l'opportunité d'explorer le côté
+        développement de la start-up ainsi que le support client.
       </p>
 
-      <h2 class="mt-4">Other</h2>
+      <h2 class="mt-4">Autre</h2>
       <p>
-        I have participated in the "Nuit du code", a challenge where Computer Science students spent
-        a whole night to create a website based on a theme. So far, I have only done the 2024
-        edition, but plan to do it again this year in 2025.
+        J'ai participé à la Nuit du Code 2024, un défi où les étudiants en Informatique travaillent
+        en équipe pour créer un site web sur un thème donné et, bien sûr, en une seule nuit.
+        L'expérience a été éprouvante, mais magique. Je prévois de faire l'édition 2025.
       </p>
     </main>
   </body>
