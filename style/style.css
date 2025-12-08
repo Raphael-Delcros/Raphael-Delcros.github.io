@@ -11417,4 +11417,23 @@ textarea.form-control-lg {
   scroll-margin-top: 77px;
 }
 
+#banner {
+  position: relative;
+  text-align: center;
+}
+
+.glass {
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*# sourceMappingURL=style.css.map */
