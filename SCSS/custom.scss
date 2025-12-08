@@ -5,7 +5,7 @@
 
 // Required
 @import "../node_modules/bootstrap/scss/functions";
-$primary: #b52fc4;
+$primary: #003f79;
 
 
 
@@ -26,6 +26,7 @@ $theme-colors: (
 .logo {
   height: 2rem;
   width: auto;
+  color: #003f79;
 }
 
 #pfp {
@@ -84,7 +85,7 @@ $theme-colors: (
   border-radius: 15px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.30);
-  color: white;
+  color: rgba(255, 255, 255, 0.80);
 }
 .centered {
   position: absolute;
