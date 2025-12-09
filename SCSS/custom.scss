@@ -48,14 +48,19 @@ $theme-colors: (
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.projet{
+  object-fit: cover;
+}
+
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: red;
+  background-color: red; //Rend gris??
   height: 6vh;
   width: 6vh;
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
+  margin: 5px;
 }
 
 .carousel-control-prev span,
@@ -79,6 +84,7 @@ $theme-colors: (
 #banner{
   position: relative;
   text-align: center;
+  mask-image: linear-gradient(to bottom, black 99%, transparent 100%);
 }
 
 .glass{
