@@ -7,15 +7,12 @@
 @import "../node_modules/bootstrap/scss/functions";
 $primary: #003f79;
 
-
-
 // Required
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";
 
 $theme-colors: (
   "primary": $primary,
-
 );
 @import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -44,11 +41,11 @@ $theme-colors: (
   display: flex;
 }
 
-.card{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.card {
+  box-shadow: 3px 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-.projet{
+.projet {
   object-fit: cover;
 }
 
@@ -65,7 +62,7 @@ $theme-colors: (
 
 .carousel-control-prev span,
 .carousel-control-next span {
-  height: 1.5rem; 
+  height: 1.5rem;
   width: 1.5rem;
 }
 /* Borders */
@@ -78,20 +75,21 @@ $theme-colors: (
 }
 
 .anchor {
-    scroll-margin-top: 77px;
+  scroll-margin-top: 77px;
 }
 
-#banner{
+#banner {
   position: relative;
   text-align: center;
   mask-image: linear-gradient(to bottom, black 99%, transparent 100%);
 }
 
-.glass{
+.glass {
   border-radius: 15px;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.30);
-  color: rgba(255, 255, 255, 0.80);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: linear-gradient(90deg, rgba(0, 63, 121, 0.3) 0%, rgba(196, 83, 237, 0.3) 75%);
+  color: rgba(255, 255, 255, 0.8);
 }
 .centered {
   position: absolute;
