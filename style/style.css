@@ -11367,7 +11367,6 @@ textarea.form-control-lg {
 .logo {
   height: 2rem;
   width: auto;
-  text-align: center;
   color: #003f79;
 }
 
@@ -11432,7 +11431,7 @@ textarea.form-control-lg {
 
 .glass {
   border-radius: 15px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: linear-gradient(90deg, rgba(0, 63, 121, 0.3) 0%, rgba(196, 83, 237, 0.3) 75%);
   color: rgba(255, 255, 255, 0.8);
